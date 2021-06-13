@@ -1,18 +1,12 @@
 import  { useState } from 'react'
 
-const Search = ({  }) => {
-  const [text, setText] = useState('')
-
-  }
-
-  return (
-    
+const Search =(props) => {
+return (
       <form>
         <input
           type='text'
           placeholder='Search movie'
-          onChange={(event) => onChange(event.target.value)}
-       
+          onChange={(event) => props.setQuery(event.target.value)}
         />
       </form>
    

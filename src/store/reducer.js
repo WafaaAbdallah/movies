@@ -1,7 +1,7 @@
 import data from "../data"
 
 const initialState={
-watchlist:data,
+movies:data,
 }
  const reducer=(state=initialState, action) => {
   switch (action.type) {

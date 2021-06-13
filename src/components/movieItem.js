@@ -1,18 +1,14 @@
-import data from "./data"
-const movieItem = ({ data }) => {
+
+const MovieItem = ({ movie }) => {
   return (
     
      <div>
-          <ul>
             <li>
-               <img src={data.img} alt='movie image' />
-            </li>
-            <li>
-             {data.name}
+             {movie.name}
             </li>
          </div>   
        
   )
 }
 
-export default movieItem
+export default MovieItem
