@@ -1,13 +1,13 @@
-import './App.css';
-import MovieList from "./components/MovieList"
-const App=()=> {
+import "./App.css";
+import MovieList from "./components/MovieList";
+import WatchedList from "./components/WatchedList";
+import UnWatchedList from "./components/UnwatchedList";
+const App = () => {
   return (
-    <div >
-      
-  <MovieList/>
-
+    <div>
+      <MovieList />
     </div>
   );
-}
+};
 
 export default App;

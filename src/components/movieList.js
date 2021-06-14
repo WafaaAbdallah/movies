@@ -1,19 +1,11 @@
-import {useSelector} from "react-redux"
-import MovieItem from "./MovieItem"
-import {useState} from "react"
-import Search from "./Search"
+import WatchedList from "./WatchedList";
+import UnWatchedList from "./UnwatchedList";
 const MovieList = (props) => {
-  const [query, setQuery] = useState("");
-const movies = useSelector((state) => state.movies);
-  
-  const list = movies
-    .filter((movie) => movie.name.includes(query))
-    .map((movie) => <MovieItem movie={movie} key={movie.id} />);
-    return(
-        <div>
-        <Search setQuery={setQuery}/>
-        {list}
-        </div>
-    )
-}
+  return (
+    <div>
+      <WatchedList />
+      <UnWatchedList />
+    </div>
+  );
+};
 export default MovieList;
